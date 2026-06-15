@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init("1TspxZuayje7qP49u");
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 Dashboard</h1>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Total Students</h3>
+        <p id="totalStudents">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Present Today</h3>
+        <p id="presentToday">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Absent Today</h3>
+        <p id="absentToday">0</p>
+    </div>
+
+</div>
+
+<div class="nav">
+    <a href="add-student.html">Manage Students</a>
+    <a href="attendance.html">Attendance</a>
+    <a href="report.html">Report</a>
+</div>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+<script>
+    loadDashboard();
+</script>
+
+</body>
+</html>

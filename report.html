@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Report</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init("1TspxZuayje7qP49u");
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📄 Report</h1>
+
+<label>Filter by Date:</label>
+
+<input type="date"
+       id="filterDate"
+       onchange="loadReport()">
+
+<button onclick="clearFilter()">Overall</button>
+
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>USN</th>
+<th>Attendance %</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="reportTable"></tbody>
+
+</table>
+
+<a href="index.html">⬅ Back</a>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+<script>
+    loadReport();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Attendance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init("1TspxZuayje7qP49u");
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📝 Attendance</h1>
+
+<input type="date" id="attendanceDate">
+
+<div id="attendanceList"></div>
+
+<button onclick="saveAttendance()">Save Attendance</button>
+
+<a href="index.html">⬅ Back</a>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+<script>
+    loadAttendancePage();
+</script>
+
+</body>
+</html>
